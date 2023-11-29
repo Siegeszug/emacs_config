@@ -3,7 +3,7 @@
 
 * Greeeeeat Job PacMan
 Initialize package archives and use package.
-	   
+#+begin_src elisp	   
 #+begin_src elisp
   (require 'package)
   (setq package-archives '(("melpa" . "https://melpa.org/packages/")
@@ -505,6 +505,7 @@ And lastly, some funcitons that will make copying and updating my preamble doabl
 #+begin_src elisp
   (use-package elpy)
   (elpy-enable)
+  (setenv "WORKON_HOME" "/home/yata_/miniconda3/envs/")
 #+end_src
 
 * Depricated Things
