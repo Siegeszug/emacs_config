@@ -3,7 +3,7 @@
 
 * Greeeeeat Job PacMan
 Initialize package archives and use package.
-#+begin_src elisp	   
+
 #+begin_src elisp
   (require 'package)
   (setq package-archives '(("melpa" . "https://melpa.org/packages/")
@@ -283,6 +283,7 @@ This one is a lot. Here we go:
 
   (use-package org
     :hook (org-mode . kmd/org-mode-setup)
+    :ensure t
     :config
     (setq org-hide-emphasis-markers t)
     (setq org-src-tab-acts-natively t)
