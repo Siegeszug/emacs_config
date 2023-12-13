@@ -507,6 +507,7 @@ And lastly, some funcitons that will make copying and updating my preamble doabl
   (use-package elpy)
   (elpy-enable)
   (setenv "WORKON_HOME" "/home/yata_/miniconda3/envs/")
+  (setq elpy-rpc-virtualenv-path "/home/yata_/miniconda3/envs/elpy-rpc")
 #+end_src
 
 * Depricated Things
