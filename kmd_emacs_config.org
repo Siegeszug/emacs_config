@@ -463,13 +463,13 @@ And lastly, some funcitons that will make copying and updating my preamble doabl
 #+begin_src elisp
   (defun LaTeX-copy-preamble ()
     (interactive)
-    (copy-file "/home/yata_/Documents/LaTeX/sdpreamble.tex"
+    (copy-file "/home/yata_/.emacs.d/sdpreamble.tex"
                (file-name-directory buffer-file-name) 1))
 
   (defun LaTeX-update-preamble ()
     (interactive)
     (copy-file (buffer-file-name)
-               "/home/yata_/Documents/LaTeX/sdpreamble.tex" 1))
+               "/home/yata_/.emacs.d/sdpreamble.tex" 1))
 
   (defun LaTeX-insert-template ()
     (interactive)
