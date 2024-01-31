@@ -462,16 +462,19 @@ And lastly, some funcitons that will make copying and updating my preamble doabl
 
 #+begin_src elisp
   (defun LaTeX-copy-preamble ()
+    "Adds the standard LaTeX preamble to the current directory."
     (interactive)
     (copy-file "/home/yata_/.emacs.d/sdpreamble.tex"
                (file-name-directory buffer-file-name) 1))
 
   (defun LaTeX-update-preamble ()
+    "Updates the template preamble, replacing it with the curent directory's copy."
     (interactive)
     (copy-file (buffer-file-name)
                "/home/yata_/.emacs.d/sdpreamble.tex" 1))
 
   (defun LaTeX-insert-template ()
+    "Adds the standard template for a LaTeX document."
     (interactive)
     (insert-file-contents "/home/yata_/Documents/LaTeX/template.tex" nil))
 #+end_src
