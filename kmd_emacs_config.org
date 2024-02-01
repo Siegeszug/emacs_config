@@ -506,11 +506,19 @@ And lastly, some funcitons that will make copying and updating my preamble doabl
 #+end_src
 
 ** Python
+
 #+begin_src elisp
   (use-package elpy)
   (elpy-enable)
   (setenv "WORKON_HOME" "/home/yata_/miniconda3/envs/")
   (setq elpy-rpc-virtualenv-path "/home/yata_/miniconda3/envs/elpy-rpc")
+#+end_src
+
+** Sage
+
+#+begin_src elisp
+  (use-package sage-shell-mode)
+  (sage-shell:define-alias)
 #+end_src
 
 * Depricated Things
