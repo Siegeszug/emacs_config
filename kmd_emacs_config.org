@@ -516,6 +516,7 @@ And lastly, some funcitons that will make copying and updating my preamble doabl
 
 ** Sage
 
+Notice that this presumes the presence of a sage install already on the computer.
 #+begin_src elisp
   (use-package sage-shell-mode)
   (sage-shell:define-alias)
