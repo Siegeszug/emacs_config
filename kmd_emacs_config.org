@@ -316,6 +316,7 @@ This one is a lot. Here we go:
 This one's easy:
 #+begin_src elisp
   (use-package org-noter)
+  (setq org-noter-always-create-frame nil)
 #+end_src
 
 **** org-present
@@ -487,6 +488,22 @@ And lastly, some funcitons that will make copying and updating my preamble doabl
 ** Coq
 #+begin_src elisp
   (use-package proof-general)
+#+end_src
+
+** Purple Drank
+#+begin_src elisp
+  (setq load-path (cons "/home/yata_/.emacs.d/leannonsense/lean4-mode" load-path))
+  (setq lean4-mode-required-packages '(dash flycheck lsp-mode magit-section))
+  (let ((need-to-refresh t))
+    (dolist (p lean4-mode-required-packages)
+      (when (not (package-installed-p p))
+        (when need-to-refresh
+          (package-refresh-contents)
+          (setq need-to-refresh nil))
+        (package-install p))))
+
+  (require 'lean4-mode)
+
 #+end_src
 
 ** C/C++
