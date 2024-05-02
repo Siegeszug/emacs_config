@@ -51,6 +51,7 @@ This inhibits a lot of the awful things that come with default emacs.
 
   (column-number-mode)
   (global-display-line-numbers-mode t)
+  (setq display-line-numbers 'relative)
 
   (display-time)
   (display-battery-mode)
