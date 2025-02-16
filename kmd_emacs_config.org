@@ -51,7 +51,7 @@ This inhibits a lot of the awful things that come with default emacs.
 
   (column-number-mode)
   (global-display-line-numbers-mode t)
-  (setq display-line-numbers 'relative)
+  (setq display-line-numbers-type 'visual)
 
   (display-time)
   (display-battery-mode)
@@ -489,6 +489,11 @@ And lastly, some funcitons that will make copying and updating my preamble doabl
 ** Coq
 #+begin_src elisp
   (use-package proof-general)
+#+end_src
+
+** JavaScript
+#+begin_src elisp
+  (use-package js2-mode)
 #+end_src
 
 ** Purple Drank

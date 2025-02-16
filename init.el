@@ -18,7 +18,7 @@
  '(org-noter-always-create-frame nil)
  '(org-noter-kill-frame-at-session-end nil)
  '(package-selected-packages
-   '(lsp-mode sage-shell-mode command-log-mode arxiv-mode flycheck ess latex-preview-pane pdf-tools doom-modeline all-the-icons multiple-cursors auctex elpy proof-general haskell-mode visual-fill-column visual-fill magit diminish counsel-projectile projectile hydra general which-key use-package rainbow-delimiters ivy-rich helpful doom-themes counsel))
+   '(js2-mode lsp-mode sage-shell-mode command-log-mode arxiv-mode flycheck ess latex-preview-pane pdf-tools doom-modeline all-the-icons multiple-cursors auctex elpy proof-general haskell-mode visual-fill-column visual-fill magit diminish counsel-projectile projectile hydra general which-key use-package rainbow-delimiters ivy-rich helpful doom-themes counsel))
  '(revert-without-query '(".*.pdf"))
  '(safe-local-variable-values
    '((org-roam-db-location . "/home/yata_/Documents/isekai/isekaiRoam/org-roam.db")
