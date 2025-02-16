@@ -1,6 +1,9 @@
 #+Title: Emacs Configuration
 #+Author: Kyle Dituro
 
+
+* Test
+
 * Greeeeeat Job PacMan
 Initialize package archives and use package.
 
@@ -180,6 +183,19 @@ Adds ivy functionality, making emacs usable.
            ("C-x C-f" . counsel-find-file)
            :map minibuffer-local-map
            ("C-r" . 'counsel-minibuffer-history)))
+#+end_src
+
+** Snippets
+#+begin_src elisp
+    (use-package yasnippet
+    :ensure t
+    :config
+    (setq yas-snippet-dirs '("/home/yata_/.emacs.d/snippets/")
+    (yas-reload-all)
+    (yas-global-mode))
+
+  (use-package yasnippet-snippets         
+    :ensure t)
 #+end_src
 
 ** Helpful
@@ -493,7 +509,11 @@ And lastly, some funcitons that will make copying and updating my preamble doabl
 
 ** JavaScript
 #+begin_src elisp
-  (use-package js2-mode)
+  (use-package js2-mode
+    :ensure t
+    :hook ((js2-mode . js2-imenu-extras-mode))
+    :init
+    (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode)))
 #+end_src
 
 ** Purple Drank
